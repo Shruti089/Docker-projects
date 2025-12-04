@@ -20,14 +20,16 @@ Features:
 ### ✅ Project 2: Docker Multi-Stage Build
 A project demonstrating Docker multi-stage builds to optimize image size and security.
 
-Features:
+*Features:*
 
-  -Lightweight production images
-  -Separate build and runtime stages
+-Lightweight production images
+
+-Separate build and runtime stages
 
 -Best practices for Docker image optimization
 
-Example goals:
+*Example goals:*
+
 -Compile in one stage
 
 -Run in another
@@ -37,7 +39,7 @@ Example goals:
 ### ✅ Project 3: Docker Compose Application
 A multi-container application setup using Docker Compose.
 
-Features:
+*Features:*
 
 -Multiple services
 
