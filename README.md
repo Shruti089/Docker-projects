@@ -22,9 +22,8 @@ A project demonstrating Docker multi-stage builds to optimize image size and sec
 
 Features:
 
--Lightweight production images
-
--Separate build and runtime stages
+  -Lightweight production images
+  -Separate build and runtime stages
 
 -Best practices for Docker image optimization
 
