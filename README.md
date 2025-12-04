@@ -21,6 +21,7 @@ Features:
 A project demonstrating Docker multi-stage builds to optimize image size and security.
 
 Features:
+
 -Lightweight production images
 
 -Separate build and runtime stages
@@ -38,6 +39,7 @@ Example goals:
 A multi-container application setup using Docker Compose.
 
 Features:
+
 -Multiple services
 
 -Custom networking
@@ -45,6 +47,7 @@ Features:
 -Volume management
 
 -Service communication
+
 -Single command deployment
 
 ### 🛠 Tech Stack
