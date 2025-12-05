@@ -1,0 +1,20 @@
+services:
+  writer:
+    build: .
+    volumes:
+      - buddy-vol:/data
+    command: ./writer.sh
+    restart: always
+
+  reader:
+    build: .
+    volumes:
+      - buddy-vol:/data
+    command: ./reader.sh
+    depends_on:
+      - writer
+    restart: always
+
+volumes:
+  buddy-vol:
+    
