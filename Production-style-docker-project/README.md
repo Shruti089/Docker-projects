@@ -27,7 +27,9 @@ Health Checks
 GitHub Actions (CI Pipeline)
 
 📁 Project Structure
+
 Production-style-docker-project/
+
 ├── frontend/              # Static frontend site
 ├── backend/               # Shell-based backend API
 ├── nginx/                 # Reverse proxy configuration
