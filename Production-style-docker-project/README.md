@@ -8,23 +8,23 @@ It simulates a real-world deployment environment with a reverse proxy, backend A
 
 🧰 Technology Stack
 
-Docker
+> Docker
 
-Docker Compose
+> Docker Compose
 
-Nginx (Reverse Proxy Configuration)
+> Nginx (Reverse Proxy Configuration)
 
-Shell Scripting (Backend API)
+> Shell Scripting (Backend API)
 
-MySQL Database
+> MySQL Database
 
-Docker Volumes (Persistence)
+> Docker Volumes (Persistence)
 
-Environment Variables
+> Environment Variables
 
-Health Checks
+> Health Checks
 
-GitHub Actions (CI Pipeline)
+> GitHub Actions (CI Pipeline)
 
 📁 Project Structure
 
@@ -51,13 +51,14 @@ Production-style-docker-project/
 └── .github/workflows/
          └── docker-ci.yml
 
+
 ⚙ How to Run the Project
 Step 1: Clone the repository
-git clone <YOUR_REPO_URL>
-cd Production-style-docker-project
+        git clone <YOUR_REPO_URL>
+        cd Production-style-docker-project
 
 Step 2: Start the application
-docker-compose up --build
+        docker-compose up --build
 
 🌐 Access the Application
 
@@ -67,36 +68,37 @@ Service	URL
 Frontend	http://localhost:8084
 
 Backend API	http://localhost:8084/api
+
 ✅ Features Implemented
 
-Multi-container orchestration using Docker Compose
+> Multi-container orchestration using Docker Compose
 
-Reverse proxy using Nginx
+> Reverse proxy using Nginx
 
-Shell-based backend API using netcat
+> Shell-based backend API using netcat
 
-Environment-based configuration
+> Environment-based configuration
 
-Backend health check monitoring
+> Backend health check monitoring
 
-Container log limits
+> Container log limits
 
-Persistent MySQL storage using Docker volumes
+> Persistent MySQL storage using Docker volumes
 
-Single-command deployment
+> Single-command deployment
 
-CI pipeline automation using GitHub Actions
+> CI pipeline automation using GitHub Actions
 
 🔁 CI/CD Pipeline
 
-This project includes a GitHub Actions CI pipeline that:
+> This project includes a GitHub Actions CI pipeline that:
 
-Runs automatically on every push
+> Runs automatically on every push
 
-Builds Docker images
+> Builds Docker images
 
-Starts all services using Docker Compose
+> Starts all services using Docker Compose
 
-Shuts down containers after validation
+> Shuts down containers after validation
 
-This ensures continuous integration and Docker build verification.
+> This ensures continuous integration and Docker build verification.
