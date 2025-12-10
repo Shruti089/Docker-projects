@@ -30,15 +30,26 @@ GitHub Actions (CI Pipeline)
 
 Production-style-docker-project/
 
-├── frontend/              # Static frontend site
-├── backend/               # Shell-based backend API
-├── nginx/                 # Reverse proxy configuration
-├── db/                    # Database directory
-├── .env                   # Environment variables
+├── frontend/            
+    # Static frontend site
+    
+├── backend/             
+     # Shell-based backend API
+     
+├── nginx/   
+     # Reverse proxy configuration
+     
+├── db/                 
+     # Database directory
+     
+├── .env        
+     # Environment variables
 ├── docker-compose.yml
+
 ├── README.md
+
 └── .github/workflows/
-    └── docker-ci.yml
+         └── docker-ci.yml
 
 ⚙ How to Run the Project
 Step 1: Clone the repository
