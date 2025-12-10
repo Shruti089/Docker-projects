@@ -56,12 +56,15 @@ Production-style-docker-project/
 ⚙ How to Run the Project
 
 Step 1: Clone the repository
-        git clone <REPO_URL>
+
+git clone <REPO_URL>
     
  cd Production-style-docker-project
 
 Step 2: Start the application
-        docker-compose up --build
+
+        
+docker-compose up --build
 
 
 
