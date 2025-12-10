@@ -1,0 +1,29 @@
+name: Production Docker CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Move to project folder
+      run: cd Production-style-docker-project || exit
+
+    - name: Build Docker Compose
+      run: docker-compose -f Production-style-docker-project/docker-compose.yml build
+
+    - name: Run containers
+      run: docker-compose -f Production-style-docker-project/docker-compose.yml up -d
+
+    - name: Stop containers
+      run: docker-compose -f Production-style-docker-project/docker-compose.yml down
+
