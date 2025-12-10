@@ -1,46 +1,46 @@
 ✅ Production-Style Docker Compose Project
 
-Overview
 
-This is a production-style multi-container Docker application using Docker Compose.
-It simulates real-world deployment with reverse proxy, backend API, and database.
+📌 Overview
+
+This is a production-style multi-container Docker application built using Docker Compose.
+It simulates a real-world deployment environment with a reverse proxy, backend API service, and database.
 
 🧰 Technology Stack
 
--Docker
+Docker
 
--Docker Compose
+Docker Compose
 
--Nginx (Reverse Proxy Configuration)
+Nginx (Reverse Proxy Configuration)
 
--Shell Scripting (Backend API)
+Shell Scripting (Backend API)
 
--MySQL Database
+MySQL Database
 
--Docker Volumes (Persistence)
+Docker Volumes (Persistence)
 
--Environment Variables
+Environment Variables
 
--Healthchecks
+Health Checks
 
--GitHub Actions (CI Pipeline)
-
+GitHub Actions (CI Pipeline)
 
 📁 Project Structure
 Production-style-docker-project/
- ├── frontend/        # Static frontend site
- ├── backend/         # Shell-based backend API
- ├── nginx/           # Reverse proxy configuration
- ├── db/              # Database directory
- ├── .env             # Environment variables
- ├── docker-compose.yml
- ├── README.md
- └── .github/workflows/docker-ci.yml
-
+├── frontend/              # Static frontend site
+├── backend/               # Shell-based backend API
+├── nginx/                 # Reverse proxy configuration
+├── db/                    # Database directory
+├── .env                   # Environment variables
+├── docker-compose.yml
+├── README.md
+└── .github/workflows/
+    └── docker-ci.yml
 
 ⚙ How to Run the Project
 Step 1: Clone the repository
-git clone <your-repo-url>
+git clone <YOUR_REPO_URL>
 cd Production-style-docker-project
 
 Step 2: Start the application
@@ -48,46 +48,42 @@ docker-compose up --build
 
 🌐 Access the Application
 
-Since the project runs on port 8084, use the following URLs:
+The project runs on port 8084.
 
 Service	URL
 Frontend	http://localhost:8084
 
 Backend API	http://localhost:8084/api
-
-
-
 ✅ Features Implemented
 
--Multi-container orchestration using Docker Compose
+Multi-container orchestration using Docker Compose
 
--Reverse proxy using Nginx
+Reverse proxy using Nginx
 
--Shell-based backend service using netcat
+Shell-based backend API using netcat
 
--Environment-based configuration
+Environment-based configuration
 
--Backend health check monitoring
+Backend health check monitoring
 
--Container log limits
+Container log limits
 
--Persistent MySQL storage using volumes
+Persistent MySQL storage using Docker volumes
 
--Single-command deployment
+Single-command deployment
 
--CI pipeline automation using GitHub Actions
-
+CI pipeline automation using GitHub Actions
 
 🔁 CI/CD Pipeline
 
--This project includes a GitHub Actions CI pipeline that:
+This project includes a GitHub Actions CI pipeline that:
 
--Automatically runs on every push
+Runs automatically on every push
 
--Builds Docker images
+Builds Docker images
 
--Starts all services using Docker Compose
+Starts all services using Docker Compose
 
--Shuts down containers after validation
+Shuts down containers after validation
 
--This ensures continuous integration and Docker build verification.
+This ensures continuous integration and Docker build verification.
